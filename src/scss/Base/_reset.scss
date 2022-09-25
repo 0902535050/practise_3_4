@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: $color-white-0;
+  font-family: "Lato", sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  @include styleText($color-black-1, $fs-4, $fw-0);
+}
+
+ul,
+li {
+  list-style: none;
+  margin-bottom: 0;
+  display: inline;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./images/favicon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Lora:ital,wght@1,400;1,500;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <title>Thanh Tuấn Foody Page</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="header__navbar">
+      <div class="nav__left">
+        <img src="./images/logo-white.png" class="logo">
+      </div>
+      <nav class="nav__right" id="menu">
+        <ul>
+          <li>
+            <a href="#">food delivery</a>
+          </li>
+          <li>
+            <a href="#">meals</a>
+          </li>
+          <li>
+            <a href="#">our cities</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </nav>
+    <div class="header__text">
+      <h1 id="header__text-1"></h1>
+    </div>
+    <div class="header__button">
+      <button class="btn btn-1">I'm hungry</button>
+      <button class="btn btn-2">Show me more</button>
+    </div>
+  </header>
+
+  <section class="section__features">
+    <div class="section__features-items">
+      <div class="features__item">
+        <ion-icon name="infinite-outline"></ion-icon>
+        <h3>Up to 365 days/year</h3>
+        <p>
+          Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can
+          also choose to order more flexibly if that's your style.
+          You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We
+          work with the best chefs in each town to ensure that you're 100% happy.
+        </p>
+      </div>
+      <div class="features__item">
+        <ion-icon name="stopwatch-outline"></ion-icon>
+        <h3>Ready in 20 minutes</h3>
+        <p>
+          You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We
+          work with the best chefs in each town to ensure that you're 100% happy.
+          Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can
+          also choose to order more flexibly if that's your style.
+        </p>
+      </div>
+      <div class="features__item">
+        <ion-icon name="nutrition-outline"></ion-icon>
+        <h3>100% organic</h3>
+        <p>
+          All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+          Good for your health, the environment, and it also tastes better!
+          We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our
+          menu containing over 100 delicious meals. It's up to you!
+        </p>
+      </div>
+      <div class="features__item">
+        <ion-icon name="cart-outline"></ion-icon>
+        <h3>Order anything</h3>
+        <p>
+          We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our
+          menu containing over 100 delicious meals. It's up to you!
+          All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+          Good for your health, the environment, and it also tastes better!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__meals">
+    <!-- Full-width images with number and caption text -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./images/1.jpg" alt="Cơm trứng trong thố đá" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/2.jpg" alt="Pizza" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/3.jpg" alt="Steak cần tây cà rốt" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/4.jpg" alt="Súp bí đỏ" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/5.jpg" alt="Paleo beef steak with vegetables" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/6.jpg" alt="Healthy baguette with egg and vegetables" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/7.jpg" alt="Burger with cheddar and bacon" />
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/8.jpg" alt="Granola with cherries and strawberries" />
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="buttonMove">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+
+
+    <ul class="meals__showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/1.jpg" alt="Cơm trứng trong thố đá" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/2.jpg" alt="Pizza" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/3.jpg" alt="Steak cần tây cà rốt" />
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/4.jpg" alt="Súp bí đỏ" />
+        </figure>
+      </li>
+    </ul>
+    <ul class="meals__showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/5.jpg" alt="Paleo beef steak with vegetables">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/6.jpg" alt="Healthy baguette with egg and vegetables">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/7.jpg" alt="Burger with cheddar and bacon">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="./images/8.jpg" alt="Granola with cherries and strawberries">
+        </figure>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section__cities">
+    <div class="section__cities-title">
+      <h2>We're currently in these cities</h2>
+    </div>
+    <div class="section__cities-items">
+      <div class="cities__item box">
+        <img src="./images/lisbon-3.jpg" alt="Thành phố Lisbon">
+        <h3>Lisbon</h3>
+        <div class="city-feature">
+          <ion-icon name="person"></ion-icon>
+          1600+ happy eaters
+        </div>
+        <div class="city-feature">
+          <ion-icon name="star"></ion-icon>
+          60+ top chefs
+        </div>
+        <div class="city-feature">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="#">@omnifood_lx</a>
+        </div>
+      </div>
+      <div class="cities__item box">
+        <img src="./images/san-francisco.jpg" alt="Thành phố San-Francisco">
+        <h3>San Francisco</h3>
+        <div class="city-feature">
+          <ion-icon name="person"></ion-icon>
+          3700+ happy eaters
+        </div>
+        <div class="city-feature">
+          <ion-icon name="star"></ion-icon>
+          160+ top chefs
+        </div>
+        <div class="city-feature">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="#">@omnifood_sf</a>
+        </div>
+      </div>
+      <div class="cities__item box">
+        <img src="./images/berlin.jpg" att="Thành phố Berlin">
+        <h3>Berlin</h3>
+        <div class="city-feature">
+          <ion-icon name="person"></ion-icon>
+          2300+ happy eaters
+        </div>
+        <div class="city-feature">
+          <ion-icon name="star"></ion-icon>
+          110+ top chefs
+        </div>
+        <div class="city-feature">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="#">@omnifood_berlin</a>
+        </div>
+      </div>
+      <div class="cities__item box">
+        <img src="./images/london.jpg" alt="Thành phố London">
+        <h3>London</h3>
+        <div class="city-feature">
+          <ion-icon name="person"></ion-icon>
+          1200+ happy eaters
+        </div>
+        <div class="city-feature">
+          <ion-icon name="star"></ion-icon>
+          50+ top chefs
+        </div>
+        <div class="city-feature">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="#">@omnifood_london</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <div class="footer__content">
+      <div class="footer__content-left aria">
+        <ul class="footer-nav">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">iOS App</a></li>
+          <li><a href="#">Android App</a></li>
+        </ul>
+      </div>
+      <div class="footer__content-right aria">
+        <ul class="social-links">
+          <li><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-google"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <p>
+        This webpage was created for the course "Design and Develop a Killer Website Using HTML5 and CSS3" by Jonas
+        Schmedtmann. No copyrights here.<br>
+        This webpage is for you! So go and do whatever you want with it and have fun.
+      </p>
+      <p>
+        Build with <ion-icon name="heart"></ion-icon> in the beautiful city of
+        Lisbon, Portugal, March 2015.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="./js/autotyping.js"></script>
+<script src="./js/showNav.js"></script>
+<script src="./js/slideShow.js"></script>
+
+</html>
